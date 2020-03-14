@@ -1,0 +1,25 @@
+<script type="text/javascript">
+  function Student() {
+
+  }
+  var whh = new Student();
+  var length = 1;
+  var gender = '男';
+  whh.name = '王花花';
+
+  if (gender != '男' && gender != '女')
+    throw '好玩不';
+
+    whh.gender = '男';
+
+  if (
+    (whh.gender == '男' && length > 1) ||
+    (whh.gender == '女' && length > 25)
+  ) {
+    throw '回去剪头';
+  }
+
+  whh.hairLength = length;
+
+  console.log(whh);
+</script>
